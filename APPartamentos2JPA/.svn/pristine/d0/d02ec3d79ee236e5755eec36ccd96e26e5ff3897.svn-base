@@ -1,0 +1,14 @@
+package presentacion.comandos.listadecomandos.vista.ventanaDepartamento;
+
+import presentacion.comandos.Comando;
+import presentacion.comandos.listadecomandos.ListaComandos;
+import presentacion.controlador.Contexto;
+
+public class ComandoCerrarVistaDepartamento implements Comando{
+
+	@Override
+	public Contexto ejecuta(Object datos) {
+		return new Contexto(ListaComandos.CERRARVISTADEPARTAMENTO,datos);
+	}
+
+}
